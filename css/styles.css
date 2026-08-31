@@ -317,6 +317,16 @@ svg {
 
 .illustration-frame {
   width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.illustration-frame img.illustration-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 /* If the exported image is missing, the frame still reads as an
@@ -926,13 +936,7 @@ svg {
   max-width: 420px;
 }
 
-.showcase-frame {
-  position: relative;
-  min-height: 460px;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  background: linear-gradient(160deg, var(--accent) 0%, var(--bg-soft) 78%);
-}
+
 
 .showcase-img {
   width: 100%;
@@ -950,7 +954,7 @@ svg {
 .showcase-tag {
   position: absolute;
   top: 24px;
-  left: 24px;
+  left: -20px;
   max-width: 220px;
   background: rgba(11, 10, 10, 0.55);
   backdrop-filter: blur(6px);
