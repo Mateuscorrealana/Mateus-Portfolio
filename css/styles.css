@@ -614,6 +614,15 @@ svg {
   text-align: left;
 }
 
+.harvard-logo{
+  width: 10%;
+  position: relative;
+}
+
+#IAazure-text h3{
+  position: relative;
+  margin-right: 50px;
+}
 
 /* =========================================================
    BOTÃO PROJETOS
@@ -621,31 +630,20 @@ svg {
 
 .projects-button {
   position: absolute;
-
   right: 0;
-  bottom: 0;
-
+  bottom: -50px;
   display: inline-flex;
-
   align-items: center;
   justify-content: center;
-
   min-width: 112px;
   height: 32px;
-
   padding: 0 18px;
-
   border-radius: var(--radius-pill);
-
   background: var(--accent);
-
   color: var(--cream);
-
   font-family: var(--font-ui);
-
   font-size: 12px;
   font-weight: 500;
-
   transition:
     transform 0.25s var(--ease),
     background 0.25s var(--ease);
